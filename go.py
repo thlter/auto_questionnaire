@@ -40,5 +40,5 @@ try:
 #     print("成功")
 
 finally:
-    time.sleep(60)
+    time.sleep(3)
     driver.quit()
