@@ -27,6 +27,18 @@ try:
     )
     option_1.click()
 
+    # 多级联动题
+    link_option = driver.find_element(By.XPATH, "//span[text()='电饭锅']")
+    link_option.click()
+    link_option = driver.find_element(By.XPATH, "//span[text()='瓦尔哈拉']")
+    link_option.click()
+    link_option = driver.find_element(By.XPATH, "//span[text()='二万人']")
+    link_option.click()
+
+    # 选择同意协议
+    check_box = driver.find_element(By.CLASS_NAME, "t-checkbox__input")
+    check_box.click()
+
     submit_button = driver.find_element(By.CLASS_NAME, "btn-submit")
     submit_button.click()
 
