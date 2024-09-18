@@ -23,7 +23,7 @@ try:
 
     # 多项单选题
     option_1 = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, "label[for='q-7-AQyw-o-1-ytdT']"))
+        EC.element_to_be_clickable((By.XPATH, "//p[text()='222']"))
     )
     option_1.click()
 
